@@ -7,6 +7,9 @@
     border: none;
     outline: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
     background-color: black;
@@ -274,6 +277,7 @@ nav a:hover{
     width: 20%;
     border: 2px solid orangered;
     background-color: black;
+    
 }
 .hcs{
     width: 20%;
@@ -325,8 +329,9 @@ nav a:hover{
 .skav div:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    background-color: rgba(255, 68, 0, 0.793);
+    background-color: rgba(255, 68, 0, 0.638);
     border-color: white;
+    box-shadow: 10px 10px 10px orangered;
 }
 .crr{
     padding-left: 130px;
@@ -424,7 +429,7 @@ nav a:hover{
     width: 20%;
     border: 2px solid orangered;
     text-align: center;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
     padding-bottom: 50px;
 }
 #pp{
