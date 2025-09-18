@@ -578,8 +578,11 @@ input:hover{
     margin-top: 20px;
     height: 200px;
     width: 500px;
+    max-width: 500px;
+    min-width: 500px;
     margin-left: 34px;
     transition: 0.5s;
+
 }
 .input{
     font-size: 25px;
