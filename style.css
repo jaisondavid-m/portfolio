@@ -1,0 +1,644 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.runid{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    background-color: orangered;
+    overflow: hidden;
+}
+.runid p{
+    display: inline-block;
+    font-size: 2em;
+    justify-content: center;
+    padding-top: 10px;
+    animation: moving 10s infinite linear;
+}
+@keyframes moving{
+    0%{transform: translateX(170%);}
+    100%{transform: translateX(-170%);}
+}
+#pro{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    transition: 0.5s;
+    margin-left: 29px;
+}
+#protext{
+    margin-top: 10px;
+    text-align: center;
+}
+#protext p{
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+#protext h2{
+    font-weight: 900;
+    padding-right: 47px;
+    padding-left: 54px;
+    padding-top: 10px;
+}
+#run{
+    position: absolute;
+    top: 364px;
+    left: 212px;
+    z-index: -1;
+    height: 100px;
+    width: 330px;
+    border-radius: 30px;
+    background-color: orangered;
+    box-shadow: 1px 1px 20px rgba(255, 68, 0, 0.651);
+    animation: bg 5s infinite linear;
+}
+@keyframes bg{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+}
+nav a{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color:orangered;
+    transition: 0.2s;
+}
+nav a:hover{
+    font-size: 21px;
+    border-bottom: 2px solid white;
+    transition: 0.2s;
+}
+.logo{
+    font-size: 2em;
+    transition: 0.2s;
+    color: orangered;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.logo:hover{
+    font-size: 34px;
+    transition: 0.2s;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 45px;
+}
+.home-content{
+    padding-left: 200px;
+    padding-right: 10px;
+    padding-top: 90px;
+    width: 80%;
+}
+.typing-text{
+    padding-top: 7px;
+}
+#nam{
+    padding-top: 15px;
+}
+.social-icon {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-left:150px ;
+}
+.social-icon a{
+    margin-left: 30px;
+    font-size: 22px;
+    margin-top: 40px;
+    text-align: center;
+    color: orangered;
+    transition: 0.5s;
+    border: 2px solid orangered;
+    padding: 4px 10px 4px 10px;
+    border-radius: 100px;
+}
+.social-icon a:hover{
+    padding: 4px 10px 4px 10px;
+    border-radius: 100px;
+    margin-left: 30px;
+    font-size: 22px;
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+    background-color: orangered;
+    border:2px solid white;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.home-content h1{
+    border-bottom: 1px solid orangered;
+    width: 38%;
+}
+.educ h2{
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-left: 45%;
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid orangered;
+}
+.tw{
+    box-sizing: border-box;
+    align-items: center;
+    width: 30%;
+    margin-left: 200px;
+    margin-top: 70px;
+    border: 2px solid orangered;
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.tw:hover{
+    background-color: rgba(128, 128, 128, 0.171);
+    border: 3px solid orangered;
+    transition: 0.5s;
+    box-shadow: 10px 10px 0px rgba(255, 68, 0, 0.686);
+    transform: scale(1.05);
+}
+@keyframes pop{
+    0%{transform: tra;}
+}
+#hh{
+    display: flex;
+}
+.loc{
+    padding-left: 10px;
+}
+.loc h3{
+    border-bottom: 2px solid orangered;
+    width: 110px;
+}
+.part{
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.clg{
+    box-sizing: border-box;
+    align-items: center;
+    width: 30%;
+    margin-left: 200px;
+    margin-top: 70px;
+    border: 2px solid orangered;
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.clg:hover{
+    background-color: rgba(128, 128, 128, 0.171);
+    border: 3px solid orangered;
+    transition: 0.5s;
+    box-shadow: 10px 10px 0px rgba(255, 68, 0, 0.686);
+    transform: scale(1.05);
+}
+.edit{
+    margin-left: 27px;
+    display: flex;
+}
+.loc1{
+    padding-left: 10px;
+}
+.loc1 h3{
+    border-bottom: 2px solid orangered;
+    width: 210px;
+}
+.part1{
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.skill h2{
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-left: 48%;
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid orangered;
+}
+.skav{
+    margin-top: 50px;
+    display: flex;
+}
+.skav div{
+    margin-left: 60px;
+    padding-left: 20px;
+}
+.c{
+    width: 20%;
+    border: 2px solid orangered;
+    padding-bottom: 40px;
+}
+.cpp{
+    width: 20%;
+    border: 2px solid orangered;
+}
+.py{
+    width: 20%;
+    border: 2px solid orangered;
+    background-color: black;
+}
+.hcs{
+    width: 20%;
+    border: 2px solid orangered;
+}
+#Ho{
+    padding-top: 10px;
+    border-bottom: 2px solid orangered;
+    width: max-content;
+}
+.c ul{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.cpp h4{
+    padding-top: 10px;
+    border-bottom: 2px solid orangered;
+    width: max-content;
+    margin-left: 70px;
+}
+.cpp ul{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.py h4{
+    padding-top: 10px;
+    border-bottom: 2px solid orangered;
+    width: max-content;
+    margin-left: 50px;
+}
+.py ul{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.hcs h4{
+    padding-top: 10px;
+    border-bottom: 2px solid orangered;
+    width: max-content;
+    margin-left: 85px;
+}
+.hcs ul{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.skav div{
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.skav div:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: rgba(255, 68, 0, 0.793);
+    border-color: white;
+}
+.crr{
+    padding-left: 130px;
+}
+#cer{
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-left: 38%;
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid orangered;
+}
+.cert2{
+    margin-top: 70px;
+    border: 2px solid orangered;
+    padding: 20px;
+    border-radius: 29px;
+    transition: 0.5s;
+    margin-left: 100px;
+    background-color: black;
+}
+.cert0{
+    margin-top: 70px;
+    border: 2px solid orangered;
+    padding: 17px;
+    border-radius: 29px;
+    transition: 0.5s;
+    margin-left: 100px;
+    padding: 50px;
+}
+.cert0 h3{
+    padding-top: 50px;
+}
+#hed1{
+    display: flex;
+    justify-content: space-between;
+}
+#list ul{
+    display: flex;
+}
+#list ul li{
+    margin-left: 20px;
+}
+.cert2 p{
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    z-index: 2;
+} 
+.cert{
+    margin-left: 36.5%;
+    margin-top: 70px;
+    width: 25%;
+    border: 2px solid orangered;
+    padding: 20px;
+    border-radius: 29px;
+    transition: 0.5s;
+}
+.crr{
+    display: flex;
+}
+
+.lo{
+    height: 3px;
+    background-color: orangered;
+    margin-top: 20px;
+    color: orangered;
+    width: 100%;
+    transition: 0.5s;
+}
+.cert2:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 0px rgba(255, 68, 0, 0.348);
+    transition: 0.5s;
+}
+.proj h2{
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-left: 47%;
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid orangered;
+}
+.pro1{
+    width: 20%;
+    border: 2px solid orangered;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    padding-bottom: 50px;
+}
+#pp{
+    padding-left: 175px;
+    margin-top: 50px;
+    display: flex;
+}
+#pp div{
+    margin-left: 100px;
+    transition: 0.3s;
+    margin-bottom: 100px;
+}
+#pp div:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+    box-shadow: 10px 10px 0px rgba(255, 68, 0, 0.492);
+}
+.dj{
+    position: absolute;
+    top:1600px;
+    left: 700px;
+    height: 200px;
+    width: auto;
+    z-index: -4;
+}
+
+.cert2:hover .dj{
+    top: 1500px;
+}
+#conh{
+    color: orangered;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 35px;
+    word-spacing: 2px;
+    margin-left: 47%;
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid orangered;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.cont{
+    margin-top: 50px;
+}
+.wha{
+    padding-top: 20px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid orangered;
+    width: max-content;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.wha p{
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wha i{
+    font-size: 60px;
+}
+
+.insta i {
+  background: linear-gradient(to right,
+    #833ab4,#fd1d1d,#fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.contdiv{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.wha:hover{
+    transform: scale(1.05);
+    box-shadow: 20px 20px 40px rgba(255, 68, 0, 0.279);
+    background-color: rgba(255, 68, 0, 0.385);
+    border: 2px solid orangered;
+}
+.msg{
+    background-color: rgba(255, 68, 0, 0.358);
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 32%;
+    margin-right: 31%;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+    border-radius:50px 50px 50px 50px;
+    transition: 0.5s;
+}
+.msg:hover{
+    box-shadow: 20px 20px 50px orangered;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+#msh{
+    font-size: 25px;
+    border-radius:50px 50px 0px 0px;
+    text-align: center;
+    background-color: orangered;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+label{
+    margin-left: 30px;
+    font-size: 22px;
+    border-bottom: 2px solid orangered;
+}
+::placeholder{
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+    opacity: 60%;
+}
+input{
+    caret-color: white;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 48px;
+    margin-left: 30px;
+    background-color: rgba(255, 68, 0, 0.56);
+    border: 2px solid wheat;
+    border-radius: 20px;
+    transition: 0.5s
+}
+input:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+#tarea:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+#tarea{
+    background-color: orangered;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 200px;
+    width: 500px;
+    margin-left: 34px;
+    transition: 0.5s;
+}
+.input{
+    font-size: 25px;
+    padding-left: 30px;
+}
+#but{
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: orangered;
+    border: 2px solid white;
+    color: white;
+    margin-top: 60px;
+    margin-left: 230px;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#but:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid orangered;
+    color: orangered;
+}
+.footer{
+    margin-top: 200px;
+    background-color: orangered;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer h3{
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+.doggy{
+    position: absolute;
+    top: 1770px;
+    left: 750px;
+    height: 150px;
+    width: auto;
+    z-index: -1;
+    transition: 0.5s;
+}
+body:has(.cert2:hover) .doggy{
+    top:1620px;
+    transition: 0.5s;
+}
+.snak{
+    position: absolute;
+    top:1200px;
+    left:917px;
+    height: 90px;
+    width: auto;
+    z-index: -4;
+    transition: 0.5s;
+}
+body:has(.py:hover) .snak{
+    top:1077px;
+    transition: 0.5s;
+}
