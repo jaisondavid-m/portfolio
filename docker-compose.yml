@@ -1,0 +1,15 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio_app
+    restart: unless-stopped
+    expose:
+      - "80"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
