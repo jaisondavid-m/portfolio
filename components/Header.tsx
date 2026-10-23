@@ -93,7 +93,7 @@ export default function Header() {
             href="/docs/jaisondavid-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-md font-bold uppercase tracking-wider px-4 py-2 transition-all duration-200 rounded-sm hover:logo-shadow hover:border-2 hover:border-(--border-color) text-(--primary-color)"
+            className="text-md font-bold uppercase tracking-wider px-4 py-2 transition-all duration-200 rounded-sm hover:logo-shadow hover:border-2 hover:border-(--border-color) text-(--text-color) dark:text-white hover:text-(--alter-color)"
           >
             RESUME
           </a>
@@ -165,7 +165,7 @@ export default function Header() {
               href="/docs/jaisondavid-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-3/4 text-lg font-bold uppercase tracking-wider px-6 py-3 rounded-md text-center transition-all duration-200 logo-shadow border-2 border-(--border-color) text-(--primary-color)"
+              className="w-3/4 text-lg font-bold uppercase tracking-wider px-6 py-3 rounded-md text-center transition-all duration-200 logo-shadow border-2 border-(--border-color) text-(--text-color) dark:text-white hover:text-(--alter-color)"
               onClick={closeMenu}
             >
               RESUME
