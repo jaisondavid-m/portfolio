@@ -237,10 +237,23 @@ export default function ResumeViewer() {
                       <h3 className="font-bold text-base">ZeroProxyAttendance — Anti-Proxy Attendance</h3>
                       <a href="https://github.com/jaisondavid-m/ZeroProxyAttendance" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
                     </div>
-                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">Flutter, Go, PostgreSQL, Redis, Docker</p>
+                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go, MySQL, Docker, REST APIs</p>
                     <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
                       <li>Multi-factor cryptographic attendance verification to prevent proxy marking.</li>
-                      <li>Rotating TOTP dynamic QR codes with GPS geofencing and campus Wi-Fi verification.</li>
+                      <li>Rotating dynamic QR codes with GPS geofencing and campus Wi-Fi verification.</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
+                    <div className="flex justify-between items-start gap-2">
+                      <h3 className="font-bold text-base">Ticket Booking System — Distributed Architecture</h3>
+                      <a href="https://github.com/jaisondavid-m/Ticket-Booking-System" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
+                    </div>
+                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">Go (Gin), Apache Kafka, Redis, MySQL, Docker, Nginx</p>
+                    <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
+                      <li>Designed to handle 100,000+ requests per second with strong consistency guarantees.</li>
+                      <li>Atomic Redis Lua scripts to eliminate overselling and race conditions under heavy load.</li>
+                      <li>Event-driven booking pipeline using Apache Kafka with MySQL inventory persistence.</li>
                     </ul>
                   </div>
                 </div>
