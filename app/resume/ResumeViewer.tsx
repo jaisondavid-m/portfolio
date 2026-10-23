@@ -264,12 +264,27 @@ export default function ResumeViewer() {
                 <h2 className="tagline-font text-lg font-bold uppercase tracking-wider text-(--primary-color) mb-2">
                   Education
                 </h2>
-                <div className="flex flex-col sm:flex-row justify-between text-sm">
-                  <div>
-                    <strong>Bannari Amman Institute of Technology</strong> — B.E. Computer Science &amp; Engineering
+                <div className="flex flex-col gap-3 text-sm">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                    <div>
+                      <strong>Bannari Amman Institute of Technology, Erode</strong> &mdash; B.E. Computer Science and Engineering
+                    </div>
+                    <div className="font-mono text-xs sm:text-sm text-(--text-color)/80 font-bold">
+                      2021 &ndash; 2025
+                    </div>
                   </div>
-                  <div className="font-mono text-xs sm:text-sm text-(--text-color)/80">
-                    2021 &ndash; 2025 &bull; CGPA: 7.7
+                  <div className="text-xs sm:text-sm text-(--primary-color) font-bold font-mono">
+                    CGPA: 9.28 / 10
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pt-2 border-t border-(--border-color)/30">
+                    <div>
+                      <strong>Holy Children Matriculation Higher Secondary School, Salem</strong>
+                      <span className="text-xs text-(--text-color)/70 block sm:inline sm:ml-2">Salem, Tamil Nadu</span>
+                    </div>
+                    <div className="font-mono text-xs text-(--text-color)/80">
+                      Higher Secondary (12th): <strong>569 / 600</strong> &bull; SSLC (10th): <strong>451 / 500</strong>
+                    </div>
                   </div>
                 </div>
               </div>

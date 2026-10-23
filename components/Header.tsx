@@ -15,7 +15,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["portfolio", "about", "projects", "skills", "connect"];
+      const sections = ["portfolio", "about", "education", "projects", "skills", "connect"];
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -72,7 +72,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-2 items-center">
-          {["portfolio", "about", "projects", "skills", "connect"].map(
+          {["portfolio", "about", "education", "projects", "skills", "connect"].map(
             (section) => (
               <Link
                 key={section}
@@ -141,7 +141,7 @@ export default function Header() {
             </div>
 
             {/* Nav links */}
-            {["portfolio", "about", "projects", "skills", "connect"].map(
+            {["portfolio", "about", "education", "projects", "skills", "connect"].map(
               (section) => (
                 <Link
                   key={section}
