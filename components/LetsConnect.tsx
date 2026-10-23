@@ -30,22 +30,25 @@ const socialLinks = [
 
 export default function LetsConnect() {
   return (
-    <section id="connect" className="bg-[--bg-color]">
+    <section id="connect" className="bg-[--bg-color] scroll-mt-20">
       <div className="max-w-6xl mx-auto pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 md:px-8 flex flex-col items-center">
         <h2 className="w-full title-font text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-(--primary-color) font-bold mb-4 sm:mb-6 md:mb-8 tracking-wider">
           LET'S CONNECT
         </h2>
         <hr className="w-full border-color border-2" />
-        <div className="logo-shadow rounded-md border-color border-4 mt-6 sm:mt-8 inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 mb-8 sm:mb-10 md:mb-12">
-          <span className="w-2 h-2 sm:w-3 sm:h-3 border-2 bg-black"></span>
+        <div className="logo-shadow rounded-md border-color border-4 mt-6 sm:mt-8 inline-flex items-center gap-2.5 px-4 sm:px-6 py-2 sm:py-3 mb-8 sm:mb-10 md:mb-12">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border border-black/20"></span>
+          </span>
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider">
             STATUS:
           </span>
-          <span className="text-xs sm:text-sm font-bold uppercase tracking-wider">
+          <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
             ACTIVE
           </span>
         </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
           {socialLinks.map((social, index) => (
             <Link
               key={index}

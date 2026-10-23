@@ -1,9 +1,23 @@
-import Link from "next/link";
+"use client";
+
 import { FaEnvelope, FaFileDownload } from "react-icons/fa";
 
 export default function About() {
+  const handleScrollToConnect = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById("connect");
+    if (target) {
+      const offsetTop = target.offsetTop - 80;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, "", "#connect");
+    }
+  };
+
   return (
-    <section id="about" className="flex items-center">
+    <section id="about" className="flex items-center scroll-mt-20">
       <div className="max-w-6xl w-full mx-4 sm:mx-6 md:mx-8 pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 border-color border-b-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl title-font text-(--primary-color) font-bold mb-3 sm:mb-4 tracking-wider">
           ABOUT.
@@ -31,20 +45,20 @@ export default function About() {
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
-            <Link
+            <a
               href="#connect"
-              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto"
+              onClick={handleScrollToConnect}
+              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto cursor-pointer"
             >
               <span>LET'S CONNECT</span>
               <FaEnvelope size={20} className="sm:w-6 sm:h-6" />
-            </Link>
+            </a>
             <a
               href="/docs/jaisondavid-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto"
+              download="Jaison-David-M-Resume.pdf"
+              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto cursor-pointer"
             >
-              <span>GET CV (PDF)</span>
+              <span>DOWNLOAD CV</span>
               <FaFileDownload size={20} className="sm:w-6 sm:h-6" />
             </a>
           </div>

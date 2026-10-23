@@ -60,7 +60,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-20">
       <div className="max-w-7xl pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 mx-4 sm:mx-6 md:mx-8 border-color border-b-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl title-font text-(--primary-color) font-bold mb-4 sm:mb-6 md:mb-8 tracking-wider">
           PROJECTS.

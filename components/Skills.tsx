@@ -17,7 +17,7 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="skills" className="bg-[--bg-color]">
+    <section id="skills" className="bg-[--bg-color] scroll-mt-20">
       <div className="max-w-7xl pt-12 pb-24 mx-8 border-color border-b-4">
         <h2 className="text-4xl title-font text-(--primary-color) md:text-6xl lg:text-7xl font-bold mb-8 tracking-wider">
           SKILLS.

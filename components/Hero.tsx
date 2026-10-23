@@ -62,9 +62,24 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute card-shadow rounded-md border-color border-2 p-2 right-1/2 -bottom-4 animate-bounce cursor-pointer hidden md:block">
+        <a
+          href="#about"
+          onClick={(e) => {
+            e.preventDefault();
+            const target = document.getElementById("about");
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: "smooth",
+              });
+              window.history.pushState(null, "", "#about");
+            }
+          }}
+          aria-label="Scroll to About section"
+          className="absolute card-shadow rounded-md border-color border-2 p-2 right-1/2 -bottom-4 animate-bounce cursor-pointer hidden md:block hover:text-(--alter-color)"
+        >
           <HiArrowDown size={32} />
-        </div>
+        </a>
       </div>
     </section>
   );
