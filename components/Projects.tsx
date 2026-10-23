@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
@@ -29,6 +29,7 @@ const projects = [
       "@icons/linux.svg",
     ],
     github: "https://github.com/jaisondavid-m/bitcentral-v2",
+    liveDemo: "https://bitcentral.bitsathy.in",
   },
   {
     name: "ZeroProxyAttendance — QR Attendance & Anti-Proxy System",
@@ -102,16 +103,29 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* GitHub Link */}
-              <Link
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 sm:mt-6 inline-flex group-hover:text-(--alter-color) dark:group-hover:text-white group-hover:bg-gray-700 transition-all duration-300 items-center justify-center gap-2 px-3 sm:px-4 py-2 border-2 rounded-md text-sm sm:text-md font-semibold"
-              >
-                <span>View on GitHub</span>
-                <FaGithub size={18} />
-              </Link>
+              {/* Links */}
+              <div className="mt-4 sm:mt-6 flex flex-wrap gap-2.5 items-center">
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex group-hover:text-(--alter-color) dark:group-hover:text-white group-hover:bg-gray-700 transition-all duration-300 items-center justify-center gap-2 px-3 sm:px-4 py-2 border-2 rounded-md text-xs sm:text-sm font-semibold"
+                >
+                  <span>View on GitHub</span>
+                  <FaGithub size={16} />
+                </Link>
+                {project.liveDemo && (
+                  <Link
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex text-(--primary-color) border-(--border-color) hover:logo-shadow hover:text-(--alter-color) transition-all duration-300 items-center justify-center gap-1.5 px-3 sm:px-4 py-2 border-2 rounded-md text-xs sm:text-sm font-bold"
+                  >
+                    <span>Live Demo</span>
+                    <FaExternalLinkAlt size={12} />
+                  </Link>
+                )}
+              </div>
             </div>
           ))}
         </div>

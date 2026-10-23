@@ -222,7 +222,11 @@ export default function ResumeViewer() {
                   <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
                     <div className="flex justify-between items-start gap-2">
                       <h3 className="font-bold text-base">BitCentral — Institutional Data Platform</h3>
-                      <a href="https://github.com/jaisondavid-m/bitcentral-v2" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
+                      <div className="flex items-center gap-2">
+                        <a href="https://github.com/jaisondavid-m/bitcentral-v2" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
+                        <span className="text-xs text-(--text-color)/50">&bull;</span>
+                        <a href="https://bitcentral.bitsathy.in" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline font-bold">Live Demo</a>
+                      </div>
                     </div>
                     <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go (Gin), MySQL, Firebase Auth</p>
                     <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
