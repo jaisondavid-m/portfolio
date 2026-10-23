@@ -29,22 +29,20 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-3 mt-4">
               <a
-                href="/docs/jaisondavid-resume.pdf"
+                href="/resume.pdf"
                 download="Jaison-David-M-Resume.pdf"
                 className="button-shadow rounded-md px-5 sm:px-6 py-3 sm:py-3.5 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
               >
                 <FaFileDownload size={18} />
                 DOWNLOAD CV
               </a>
-              <a
-                href="/docs/jaisondavid-resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/resume"
                 className="button-shadow rounded-md px-5 sm:px-6 py-3 sm:py-3.5 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
               >
                 <FaRegFilePdf size={18} />
                 VIEW RESUME
-              </a>
+              </Link>
             </div>
           </div>
 

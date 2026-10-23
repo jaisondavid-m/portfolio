@@ -54,7 +54,7 @@ export default function About() {
               <FaEnvelope size={20} className="sm:w-6 sm:h-6" />
             </a>
             <a
-              href="/docs/jaisondavid-resume.pdf"
+              href="/resume.pdf"
               download="Jaison-David-M-Resume.pdf"
               className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto cursor-pointer"
             >
