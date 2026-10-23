@@ -119,7 +119,7 @@ export default function Projects() {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex text-(--primary-color) border-(--border-color) hover:logo-shadow hover:text-(--alter-color) transition-all duration-300 items-center justify-center gap-1.5 px-3 sm:px-4 py-2 border-2 rounded-md text-xs sm:text-sm font-bold"
+                    className="inline-flex text-(--primary-color) group-hover:text-(--alter-color) border-(--border-color) hover:logo-shadow hover:text-(--alter-color) transition-all duration-300 items-center justify-center gap-1.5 px-3 sm:px-4 py-2 border-2 rounded-md text-xs sm:text-sm font-bold"
                   >
                     <span>Live Demo</span>
                     <FaExternalLinkAlt size={12} />

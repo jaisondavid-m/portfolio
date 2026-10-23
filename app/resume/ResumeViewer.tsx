@@ -107,7 +107,7 @@ export default function ResumeViewer() {
           <a
             href="/resume.pdf"
             download="Jaison-David-M-Resume.pdf"
-            className="button-shadow px-3 sm:px-4 py-2 border-2 border-(--border-color) rounded-md text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 hover:text-(--alter-color) bg-(--card-background)"
+            className="button-shadow px-3 sm:px-4 py-2 border-2 border-(--border-color) rounded-md text-xs sm:text-sm font-bold uppercase tracking-wider flex items-center gap-2 hover:text-(--alter-color)"
             title="Download PDF"
           >
             <FaDownload size={14} />
@@ -274,7 +274,7 @@ export default function ResumeViewer() {
                       <strong>Bannari Amman Institute of Technology, Erode</strong> &mdash; B.E. Computer Science and Engineering
                     </div>
                     <div className="font-mono text-xs sm:text-sm text-(--text-color)/80 font-bold">
-                      2021 &ndash; 2025
+                      2025 &ndash; 2029
                     </div>
                   </div>
                   <div className="text-xs sm:text-sm text-(--primary-color) font-bold font-mono">

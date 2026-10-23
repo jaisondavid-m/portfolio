@@ -26,6 +26,21 @@
     --card-background: #97266d;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  ::selection {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+
   body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
@@ -122,6 +137,17 @@
     background-color: var(--base-color);
     color: var(--alter-color);
     /* border-color: var(--primary-color) */
+  }
+
+  .education-card-shadow {
+    @apply transition-all duration-200;
+    box-shadow: 8px 8px 0 var(--base-color);
+    background-color: var(--bg-color);
+  }
+
+  .education-card-shadow:hover {
+    @apply translate-x-1 translate-y-1;
+    box-shadow: 4px 4px 0 var(--base-color);
   }
 
   .scrolltotop-shadow {

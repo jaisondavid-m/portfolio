@@ -89,13 +89,6 @@ export default function Header() {
             )
           )}
 
-          <Link
-            href="/resume"
-            className="text-md font-bold uppercase tracking-wider px-4 py-2 transition-all duration-200 rounded-sm hover:logo-shadow hover:border-2 hover:border-(--border-color) text-(--text-color) dark:text-white hover:text-(--alter-color)"
-          >
-            RESUME
-          </Link>
-
           {/* Theme toggle */}
           <button
             onClick={toggleTheme}
@@ -158,14 +151,6 @@ export default function Header() {
                 </Link>
               )
             )}
-
-            <Link
-              href="/resume"
-              className="w-3/4 text-lg font-bold uppercase tracking-wider px-6 py-3 rounded-md text-center transition-all duration-200 logo-shadow border-2 border-(--border-color) text-(--text-color) dark:text-white hover:text-(--alter-color)"
-              onClick={closeMenu}
-            >
-              RESUME
-            </Link>
 
             {/* Theme toggle */}
             <button
