@@ -20,7 +20,7 @@ const projects = [
   {
     name: "BitCentral — Full-Stack Institutional Data Platform",
     description:
-      "A full-stack institutional data platform serving 3,500+ students across 20+ academic departments through secure REST APIs. Engineered with a thread-safe in-memory caching layer using sync.RWMutex and deep-copy buffers, reducing Google Sheets API calls and improving response latency. Implements RBAC authorization middleware, SQL-backed role validation, domain-based access control, and optimized MySQL performance using transactions, indexing strategies, and connection pooling.",
+      "A full-stack institutional data platform currently serving 5,700+ students across 20+ academic departments through secure REST APIs. Engineered with a thread-safe in-memory caching layer using sync.RWMutex and deep-copy buffers, reducing Google Sheets API calls and improving response latency. Implements RBAC authorization middleware, SQL-backed role validation, domain-based access control, and optimized MySQL performance using transactions, indexing strategies, and connection pooling.",
     icons: [
       "@icons/react.svg",
       "@icons/golang.svg",
