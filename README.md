@@ -1,162 +1,175 @@
-# Jaison David M &mdash; Portfolio & Resume
+# Neo-Brutalist Developer Portfolio & Resume Template
 
-A modern, high-performance neo-brutalist portfolio and interactive resume website built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+A high-performance, neo-brutalist developer portfolio and interactive resume template built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
 
-🌐 **Live Website**: [https://jaisondavid.in](https://jaisondavid.in)  
-📄 **Interactive Resume**: [https://jaisondavid.in/resume](https://jaisondavid.in/resume)
-
----
-
-## 👨‍💻 About Me
-
-Full-Stack &amp; Backend Engineer specializing in building scalable, high-throughput distributed systems and production platforms currently serving 5,700+ students. Experienced in Go (Gin), Apache Kafka, Redis, Docker, and MySQL, with a strong focus on concurrency control, low-latency API design, and containerized microservices.
+Featuring tactile 3D box-shadows, responsive dark/light mode, custom selection colors, an embedded resume viewer (`/resume`), and an automated **GitHub Pages** deployment pipeline.
 
 ---
 
-## ✨ Features & Architecture
+## 🌟 Features
 
-- **Neo-Brutalist Tactile Design**: Custom brutalist box-shadows, responsive light and dark theme engine, and brand pink/magenta text selection highlights (`#97266d`).
-- **Interactive Online Resume (`/resume`)**: Dual-mode resume viewer allowing visitors to toggle between an embedded single-page PDF document and a clean web view, with instant one-click download.
-- **Featured Projects Showcase**: Detailed overviews with architecture bullets, technology badges, GitHub source links, and production live demos.
-- **Education Section**: Clean academic background highlighting B.E. in Computer Science & Engineering at Bannari Amman Institute of Technology (CGPA: 9.28 / 10) and Holy Children Matriculation HSS.
-- **Automated CI/CD Pipeline**: GitHub Actions workflow that statically exports Next.js into production bundles and deploys directly to GitHub Pages on custom domain `jaisondavid.in`.
-- **Search Engine & AI Discovery**: Comprehensive SEO optimizations including structured Schema.org JSON-LD, OpenGraph tags, Twitter cards, dynamic metadata, and XML sitemaps.
-
----
-
-## 🚀 Featured Projects
-
-### 1. [BitCentral](https://bitcentral.bitsathy.in) &mdash; Full-Stack Institutional Data Platform
-- **Stack**: React, Go (Gin), MySQL, Docker, Linux
-- Engineered a full-stack platform currently serving **5,700+ students** across 20+ academic departments.
-- Designed a thread-safe in-memory caching layer with `sync.RWMutex` and deep-copy buffers, cutting external API latency.
-- [GitHub Repository](https://github.com/jaisondavid-m/bitcentral-v2) &bull; [Live Demo](https://bitcentral.bitsathy.in)
-
-### 2. [iTrigger](https://github.com/jaisondavid-m/iTrigger) &mdash; Continuous Deployment & Webhook Automation Server
-- **Stack**: React, Go (Gin), Docker, Caddy, GitHub Webhooks, MySQL
-- Lightweight CD platform in Go automating server deployments by mapping GitHub repositories and branches to shell workflows.
-- Implemented HMAC-SHA256 webhook signature validation to securely authenticate deployment triggers.
-- [GitHub Repository](https://github.com/jaisondavid-m/iTrigger)
-
-### 3. [ZeroProxyAttendance](https://github.com/jaisondavid-m/ZeroProxyAttendance) &mdash; Anti-Proxy QR Attendance System
-- **Stack**: React, Go, MySQL, Docker, REST APIs
-- Anti-proxy attendance platform eliminating manipulation via time-sensitive dynamic QR cryptographic handshakes.
-- Integrated dual-factor physical verification combining GPS geofencing and campus network IP validation.
-- [GitHub Repository](https://github.com/jaisondavid-m/ZeroProxyAttendance)
-
-### 4. [Ticket Booking System](https://github.com/jaisondavid-m/Ticket-Booking-System) &mdash; Distributed High-Throughput Architecture
-- **Stack**: Go (Gin), Apache Kafka, Redis, MySQL, Docker, Nginx
-- High-concurrency backend engineered to handle **100,000+ requests/sec** with strict consistency guarantees.
-- Implemented atomic Redis Lua availability gates to prevent overselling and eliminate race conditions under heavy load.
-- Asynchronous event-driven booking pipeline using Apache Kafka (12 partitions, 32 worker consumers).
-- [GitHub Repository](https://github.com/jaisondavid-m/Ticket-Booking-System)
+- 🎨 **Neo-Brutalist Aesthetics**: Bold borders, tactile button press micro-interactions, offset shadows, and curated typography.
+- 🌓 **Light & Dark Mode**: Seamless theme switching with persistent localStorage state.
+- 📄 **Interactive Resume Viewer (`/resume`)**: Built-in dual-mode viewer supporting embedded PDF preview and responsive web document view with one-click download.
+- 📱 **Fully Responsive**: Optimized for all device sizes from mobile phones to wide desktop displays.
+- ⚡ **Next.js Static Export**: Blazing-fast page loads with zero server dependencies (`output: 'export'`).
+- 🚀 **Automated CI/CD Deployment**: Ready-to-use GitHub Actions workflow deploying directly to GitHub Pages with custom domain support.
+- 🔍 **SEO & Social Cards**: Pre-configured OpenGraph metadata, Twitter cards, and sitemap generation.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Quick Start
 
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | Go (Golang), Java, JavaScript, TypeScript, C, SQL, Bash |
-| **Backend & Distributed** | Go (Gin), Node.js, Express, REST APIs, Apache Kafka, Redis |
-| **Frontend** | React, Next.js, HTML5, CSS3, Tailwind CSS |
-| **Databases** | MySQL (transactions, indexing, connection pooling), PostgreSQL |
-| **DevOps & Cloud** | Docker, Docker Compose, Caddy, Nginx, Linux, Git, GitHub Actions |
-| **Typography** | Space Mono, EB Garamond, Archivo Black |
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- `npm`, `pnpm`, or `yarn`
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/jaisondavid-m/portfolio.git my-portfolio
+cd my-portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view your site live.
 
 ---
 
-## 📁 Repository Structure
+## 🛠️ How to Customize for Your Own Portfolio
+
+Follow these simple steps to replace the placeholder content with your own information:
+
+### 1. Hero Section (`components/Hero.tsx`)
+- Update your name, professional title, and tagline summary.
+- Replace the avatar image (`public/images/`) or update the `imageSrc` property.
+- Update the download button label or links.
+
+### 2. About Section (`components/About.tsx`)
+- Add your personal introduction, background, and engineering focus.
+- Update the **Let's Connect** and **Download CV** action buttons.
+
+### 3. Education (`components/Education.tsx`)
+- Update your academic qualifications (College, Degree, High School, SSLC/Certificates).
+- Adjust graduation dates, CGPA, marks, and academic honors.
+
+### 4. Projects (`components/Projects.tsx`)
+- Edit the `projects` array with your own projects:
+  ```ts
+  {
+    name: "Project Name",
+    description: "Brief overview of what you built and the impact.",
+    icons: ["/icons/react.svg", "/icons/golang.svg", ...],
+    github: "https://github.com/your-username/project",
+    liveDemo: "https://your-demo-url.com" // optional
+  }
+  ```
+- Add custom tech icons to `public/icons/` as SVGs.
+
+### 5. Technical Skills (`components/Skills.tsx`)
+- Customize the `tools` list with your preferred programming languages, frameworks, databases, and DevOps tools.
+
+### 6. Connect & Socials (`components/LetsConnect.tsx`)
+- Update social handles and links (LinkedIn, GitHub, LeetCode, X/Twitter, Email, WhatsApp).
+- Set your current availability status banner (e.g., *"Open to Opportunities"*).
+
+### 7. Resume Document (`public/` & `app/resume/`)
+- Place your PDF resume in `public/resume.pdf` and `public/docs/your-resume.pdf`.
+- Update the web version of the resume in `app/resume/ResumeViewer.tsx` to match your document details.
+
+### 8. Custom Domain & Branding (`CNAME` & `app/globals.css`)
+- **Custom Domain**: Update the `CNAME` file in the root with your domain (e.g., `yourdomain.com`), or remove the file if you are using `<username>.github.io`.
+- **Colors**: Customize the primary accent color in `app/globals.css`:
+  ```css
+  :root {
+    --primary-color: #97266d; /* Change to your desired accent color */
+    --base-color: #97266d;
+    --border-color: #97266d;
+  }
+  ```
+- **SEO Metadata**: Update `title`, `description`, and author metadata in `app/layout.tsx`.
+
+---
+
+## 📦 Building for Production
+
+To test the production static export build locally:
+
+```bash
+npm run build
+```
+
+This exports your static web bundle directly into the `out/` directory.
+
+---
+
+## 🌐 Deployment
+
+### Deploy to GitHub Pages (Automatic)
+
+This repository includes a pre-configured GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+1. Push your code to your GitHub repository on branch `main`.
+2. In your repository on GitHub, navigate to:
+   **Settings** &rarr; **Pages** &rarr; **Build and deployment**.
+3. Under **Source**, select **GitHub Actions**.
+4. Every push to `main` will automatically build and deploy your portfolio!
+
+### Deploy to Vercel
+
+1. Push your repository to GitHub.
+2. Sign in to [Vercel](https://vercel.com) and click **Add New Project**.
+3. Import your repository and click **Deploy**.
+
+---
+
+## 📂 Project Structure
 
 ```
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml        # GitHub Actions automated Pages deployment
+│       └── deploy.yml        # Automated GitHub Pages CI/CD workflow
 ├── app/
-│   ├── globals.css           # Neo-brutalist theme tokens, selection & shadows
+│   ├── globals.css           # Neo-brutalist theme variables, selection & shadows
 │   ├── layout.tsx            # Global metadata, fonts, and theme wrapper
-│   ├── page.tsx              # Single-page portfolio assembly
-│   ├── resume/
-│   │   ├── page.tsx          # /resume route metadata
-│   │   └── ResumeViewer.tsx  # Dual-mode PDF and Web resume viewer
+│   ├── page.tsx              # Main portfolio page assembly
+│   └── resume/
+│       ├── page.tsx          # /resume route metadata
+│       └── ResumeViewer.tsx  # Dual-mode PDF and Web resume viewer
 ├── components/
-│   ├── Header.tsx            # Sticky navigation with theme toggle & mobile drawer
-│   ├── Hero.tsx              # Introduction, avatar, CV download & view resume CTA
-│   ├── About.tsx             # Professional biography and contact triggers
-│   ├── Education.tsx         # College and Higher Secondary academic cards
-│   ├── Projects.tsx          # Responsive grid of featured systems projects
-│   ├── Skills.tsx            # Auto-fill icon grid of technical tools
-│   ├── LetsConnect.tsx       # Social links, email triggers, and status badge
-│   └── Footer.tsx            # Copyright notice and scroll-to-top floating button
+│   ├── Header.tsx            # Navigation header with dark/light mode toggle
+│   ├── Hero.tsx              # Hero profile intro & primary action buttons
+│   ├── About.tsx             # Professional biography & quick links
+│   ├── Education.tsx         # Academic timeline and degree cards
+│   ├── Projects.tsx          # Featured projects grid with live links
+│   ├── Skills.tsx            # Interactive tech stack icon grid
+│   ├── LetsConnect.tsx       # Contact methods, social links & status badge
+│   └── Footer.tsx            # Copyright footer and floating scroll-to-top button
 ├── contexts/
-│   └── ThemeContext.tsx      # Persistent light/dark mode state manager
+│   └── ThemeContext.tsx      # Dark/light theme state provider
 ├── public/
-│   ├── docs/
-│   │   └── jaisondavid-resume.pdf  # Downloadable resume document
-│   ├── icons/                # Tech stack SVGs
-│   ├── images/               # High-res profile and banner assets
-│   ├── CNAME                 # Custom domain configuration (jaisondavid.in)
-│   ├── resume.pdf            # Root resume asset
-│   ├── robots.txt            # Search engine crawler policies
-│   └── sitemap.xml           # SEO sitemap index
-├── next.config.js            # Static export configuration (`output: 'export'`)
+│   ├── icons/                # Technology and skill SVG icons
+│   ├── images/               # Profile and avatar media
+│   ├── CNAME                 # Custom domain configuration
+│   └── resume.pdf            # PDF resume asset
+├── next.config.js            # Next.js static export settings
 ├── package.json
 └── tsconfig.json
 ```
 
 ---
 
-## 💻 Local Development
-
-### Prerequisites
-- **Node.js**: v18 or higher
-- **npm** or **yarn**
-
-### Quick Start
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/jaisondavid-m/portfolio.git
-cd portfolio
-
-# 2. Install dependencies
-npm install
-
-# 3. Start local development server
-npm run dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
-
-```bash
-# Generate static export into /out
-npm run build
-```
-
----
-
-## 🚀 Deployment
-
-The site is automatically deployed to [jaisondavid.in](https://jaisondavid.in) on every push to the `main` branch via GitHub Actions ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)):
-
-1. Runs `npm ci`
-2. Executes `npm run build` with `output: 'export'`
-3. Uploads static bundle (`/out`)
-4. Deploys to GitHub Pages with SSL on custom domain `jaisondavid.in`
-
----
-
-## 📬 Connect With Me
-
-- **Website**: [jaisondavid.in](https://jaisondavid.in)
-- **LinkedIn**: [linkedin.com/in/jaison-david-m-a14072360](https://linkedin.com/in/jaison-david-m-a14072360)
-- **GitHub**: [github.com/jaisondavid-m](https://github.com/jaisondavid-m)
-- **Email**: [jaison7373@gmail.com](mailto:jaison7373@gmail.com)
-
----
-
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This template is open-source and available under the [MIT License](LICENSE). Feel free to fork, customize, and use it for your personal portfolio!
