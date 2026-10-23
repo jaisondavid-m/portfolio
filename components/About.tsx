@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaFileDownload } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -30,13 +30,24 @@ export default function About() {
               clean, reactive web interfaces.
             </p>
           </div>
-          <Link
-            href="#connect"
-            className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto"
-          >
-            <span>LET'S CONNECT</span>
-            <FaEnvelope size={20} className="sm:w-6 sm:h-6" />
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="#connect"
+              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto"
+            >
+              <span>LET'S CONNECT</span>
+              <FaEnvelope size={20} className="sm:w-6 sm:h-6" />
+            </Link>
+            <a
+              href="/docs/jaisondavid-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-shadow rounded-md hover:text-(--alter-color) border-color border-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold uppercase tracking-wider inline-flex gap-2 items-center justify-center w-full sm:w-auto"
+            >
+              <span>GET CV (PDF)</span>
+              <FaFileDownload size={20} className="sm:w-6 sm:h-6" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

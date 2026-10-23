@@ -2,7 +2,7 @@
 
 import { HiArrowDown } from "react-icons/hi";
 import Image from "next/image";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaRegFilePdf } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Hero() {
@@ -27,15 +27,25 @@ export default function Hero() {
               </p>
             </div>
 
-            <Link
-              href="/docs/jaisondavid-resume.docx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-shadow rounded-md mt-4 px-6 sm:px-8 py-3 sm:py-4 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
-            >
-              <FaFileDownload size={20} />
-              DOWNLOAD RESUME
-            </Link>
+            <div className="flex flex-wrap gap-3 mt-4">
+              <a
+                href="/docs/jaisondavid-resume.pdf"
+                download="Jaison-David-M-Resume.pdf"
+                className="button-shadow rounded-md px-5 sm:px-6 py-3 sm:py-3.5 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
+              >
+                <FaFileDownload size={18} />
+                DOWNLOAD CV
+              </a>
+              <a
+                href="/docs/jaisondavid-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-shadow rounded-md px-5 sm:px-6 py-3 sm:py-3.5 border-color border-2 text-sm sm:text-md font-semibold uppercase tracking-wider flex items-center gap-2 w-fit hover:text-(--alter-color)"
+              >
+                <FaRegFilePdf size={18} />
+                VIEW RESUME
+              </a>
+            </div>
           </div>
 
           <div className="flex justify-center items-center order-first md:order-last">
