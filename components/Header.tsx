@@ -168,7 +168,7 @@ export default function Header() {
               className="w-3/4 text-lg font-bold uppercase tracking-wider px-6 py-3 rounded-md text-center transition-all duration-200 logo-shadow border-2 border-(--border-color) text-(--primary-color)"
               onClick={closeMenu}
             >
-              RESUME (PDF)
+              RESUME
             </a>
 
             {/* Theme toggle */}
