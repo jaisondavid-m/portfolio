@@ -153,10 +153,10 @@ export default function ResumeViewer() {
                 </div>
                 <div className="flex flex-col text-xs sm:text-sm font-mono gap-1">
                   <a
-                    href="mailto:jaison7373@gmail.com"
+                    href="mailto:connect@jaisondavid.in"
                     className="hover:underline text-(--primary-color)"
                   >
-                    jaison7373@gmail.com
+                    connect@jaisondavid.in
                   </a>
                   <a
                     href="tel:+919843777817"

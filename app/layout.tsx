@@ -114,7 +114,7 @@ const jsonLd = {
       "jobTitle": "Backend & Distributed Systems Engineer",
       "description":
         "Backend & Distributed Systems Engineer specializing in Go (Gin), Apache Kafka, Redis, Docker, and high-throughput web applications.",
-      "email": "mailto:jaison7373@gmail.com",
+      "email": "mailto:connect@jaisondavid.in",
       "telephone": "+919843777817",
       "alumniOf": {
         "@type": "EducationalOrganization",

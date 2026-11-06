@@ -46,10 +46,10 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: "EMAIL",
-    description: "jaison7373@gmail.com",
-    url: "mailto:jaison7373@gmail.com",
+    description: "connect@jaisondavid.in",
+    url: "mailto:connect@jaisondavid.in",
     icon: <FaEnvelope className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />,
-    copyValue: "jaison7373@gmail.com",
+    copyValue: "connect@jaisondavid.in",
     copyLabel: "COPY EMAIL",
   },
 ];
