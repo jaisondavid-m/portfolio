@@ -181,7 +181,7 @@ export default function ResumeViewer() {
                   Professional Summary
                 </h2>
                 <p className="text-sm sm:text-base leading-relaxed">
-                  Full-Stack Developer who has built and deployed production web applications serving 5,700+ students, with hands-on experience in scalable systems using Go, React, MySQL, Redis, Docker, and Kafka. Skilled in designing secure REST APIs, implementing authentication and role-based access control, optimizing backend performance, and building responsive frontend interfaces. Pursuing a B.E. in Computer Science and Engineering; seeking a Full Stack Developer internship.
+                  Full-Stack Developer specializing in high-throughput distributed systems, event-driven architectures, and production platforms currently serving 5,700+ students. Experienced in Go (Gin), React 19, MySQL HA Clustering, Redis, Docker, and Apache Kafka, with a strong focus on concurrency control, low-latency API design, zero-downtime deployments, and containerized microservices. Pursuing a B.E. in Computer Science and Engineering; seeking a Software Engineering / Full-Stack Developer internship.
                 </p>
               </div>
 
@@ -191,12 +191,12 @@ export default function ResumeViewer() {
                   Technical Skills
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-mono">
-                  <div><strong>Languages:</strong> Java, Go, JavaScript, C</div>
-                  <div><strong>Frontend:</strong> React.js, HTML5, CSS3, Tailwind CSS</div>
-                  <div><strong>Backend:</strong> Go (Gin), Node.js, Express.js, REST APIs, JWT</div>
-                  <div><strong>Databases:</strong> MySQL, PostgreSQL, Redis</div>
-                  <div><strong>Cloud &amp; DevOps:</strong> Docker, Nginx, Kafka, Git, GitHub, Linux</div>
-                  <div><strong>Tools:</strong> Postman, Firebase Authentication</div>
+                  <div><strong>Languages:</strong> Go (Golang), Java, JavaScript / TypeScript, C, SQL, Bash</div>
+                  <div><strong>Frontend:</strong> React.js, Next.js, HTML5, CSS3, Tailwind CSS</div>
+                  <div><strong>Backend:</strong> Go (Gin), REST APIs, Apache Kafka, Redis, WebRTC, WebSockets</div>
+                  <div><strong>Databases:</strong> MySQL (HA Cluster, GTID Failover), PostgreSQL, Redis</div>
+                  <div><strong>Cloud &amp; DevOps:</strong> Docker, Docker Compose, Nginx, Blue-Green Deploy, Linux, Git, Jenkins CI/CD</div>
+                  <div><strong>Tools:</strong> Postman, Firebase Authentication, CodeMirror</div>
                 </div>
               </div>
 
@@ -208,14 +208,16 @@ export default function ResumeViewer() {
                 <div className="space-y-4">
                   <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
                     <div className="flex justify-between items-start gap-2">
-                      <h3 className="font-bold text-base">iTrigger — Continuous Deployment Server</h3>
-                      <a href="https://github.com/jaisondavid-m/iTrigger" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
+                      <h3 className="font-bold text-base">Interview Portal — Distributed Peer-to-Peer Technical Interview &amp; Lab Engineering Platform</h3>
+                      <a href="https://github.com/jaisondavid-m/Interview-Portal" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
                     </div>
-                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go (Gin), Docker, Caddy, GitHub Webhooks, MySQL</p>
-                    <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
-                      <li>Automates deployments by mapping GitHub repositories and branches to server workflows.</li>
-                      <li>HMAC-SHA256 signature verification to authenticate webhook triggers.</li>
-                      <li>Containerized with Docker, Caddy HTTPS reverse proxy.</li>
+                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">Go 1.23 (Gin), React 19, MySQL 8.0 HA Cluster, Redis 7, Docker Compose, Nginx, WebRTC, Jenkins CI/CD</p>
+                    <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1.5">
+                      <li><strong>Automated Peer Role-Reversal &amp; Double-Blind Audio:</strong> Built an enterprise technical interview engine where sessions split into two balanced rounds with automated mid-interview role swap (interviewer ↔ candidate) and anonymous WebRTC audio signaling to eliminate unconscious cognitive bias while simulating realistic phone screenings.</li>
+                      <li><strong>4 Domain-Specific Interactive Workspaces:</strong> Developed real-time collaborative environments with live canvas and state synchronization: <em>System Design Studio</em> (drag-and-drop cloud nodes with protocol links), <em>Algorithm Code Lab</em> (live multi-language editor for C++, Java, Python, JS with test validation), <em>MCQ Speed Arena</em>, and an isolated SQL sandbox.</li>
+                      <li><strong>Isolated Database Sandbox Engine:</strong> Provisioned a dedicated, containerized MySQL sandbox instance (port 3309) with dynamic ephemeral schema namespaces, enabling candidates to execute arbitrary live DDL/DML queries and indexing tests safely outside production database boundaries.</li>
+                      <li><strong>Zero-Downtime Blue-Green Deployment:</strong> Engineered containerized Blue-Green deployment architecture with dual Go instances (<code className="text-xs">app-blue:8081</code>, <code className="text-xs">app-green:8082</code>), automated pre-flight <code className="text-xs">/health</code> probing, atomic Nginx upstream switching (<code className="text-xs">nginx -s reload</code>) with zero dropped in-flight connections, sub-second instant rollback (&lt; 1s), and declarative Jenkins CI/CD automation.</li>
+                      <li><strong>High-Availability MySQL Cluster &amp; GTID Auto-Failover:</strong> Designed database architecture using <code className="text-xs">GORM DBResolver</code> for read/write splitting (Primary :3306 for writes; 2 Read Replicas :3307 &amp; :3308 with RandomPolicy load balancing and 500-conn pool) and built a standalone Python supervisor daemon (<code className="text-xs">failover_manager.py</code>) running 3s heartbeat probes with automated highest-GTID replica election for zero data loss.</li>
                     </ul>
                   </div>
 
@@ -228,36 +230,39 @@ export default function ResumeViewer() {
                         <a href="https://bitcentral.bitsathy.in" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline font-bold">Live Demo</a>
                       </div>
                     </div>
-                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go (Gin), MySQL, Firebase Auth</p>
+                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go (Gin), MySQL, Docker, Linux, Firebase Auth</p>
                     <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
-                      <li>Currently serving 5,700+ students across 20+ academic departments.</li>
-                      <li>Thread-safe in-memory caching with sync.RWMutex and deep-copy buffers.</li>
-                      <li>RBAC authorization middleware with Firebase JWT verification.</li>
+                      <li>Currently serving 5,700+ students and faculty across 20+ academic departments via secure, high-throughput REST APIs.</li>
+                      <li>Designed a thread-safe in-memory caching layer using <code className="text-xs">sync.RWMutex</code> and deep-copy buffers, reducing external Google Sheets API calls and drastically cutting endpoint response latency.</li>
+                      <li>Implemented fine-grained RBAC authorization middleware, SQL-backed role validation, and Firebase JWT authentication for secure institutional access control.</li>
+                      <li>Optimized MySQL query performance using atomic database transactions, indexing strategies, and high-concurrency connection pooling.</li>
                     </ul>
                   </div>
 
                   <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
                     <div className="flex justify-between items-start gap-2">
-                      <h3 className="font-bold text-base">ZeroProxyAttendance — Anti-Proxy Attendance</h3>
+                      <h3 className="font-bold text-base">ZeroProxyAttendance — QR Attendance &amp; Anti-Proxy System</h3>
                       <a href="https://github.com/jaisondavid-m/ZeroProxyAttendance" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
                     </div>
-                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go, MySQL, Docker, REST APIs</p>
+                    <p className="text-xs font-mono text-(--primary-color) mt-0.5">React, Go (Gin), MySQL, Docker, REST APIs</p>
                     <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
-                      <li>Multi-factor cryptographic attendance verification to prevent proxy marking.</li>
-                      <li>Rotating dynamic QR codes with GPS geofencing and campus Wi-Fi verification.</li>
+                      <li>Built an anti-proxy attendance platform eliminating check-in manipulation and student fraud through time-sensitive dynamic QR code cryptographic handshakes.</li>
+                      <li>Integrated dual-factor physical presence verification combining GPS geofencing radius checks with campus local network / Wi-Fi IP validation to guarantee in-class presence.</li>
+                      <li>Developed responsive instructor dashboards featuring live validation feeds, real-time proxy anomaly detection, and automated attendance record export pipelines.</li>
                     </ul>
                   </div>
 
                   <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
                     <div className="flex justify-between items-start gap-2">
-                      <h3 className="font-bold text-base">Ticket Booking System — Distributed Architecture</h3>
+                      <h3 className="font-bold text-base">Ticket Booking System — Distributed High-Throughput Architecture</h3>
                       <a href="https://github.com/jaisondavid-m/Ticket-Booking-System" target="_blank" rel="noopener noreferrer" className="text-xs text-(--primary-color) font-mono underline">GitHub</a>
                     </div>
                     <p className="text-xs font-mono text-(--primary-color) mt-0.5">Go (Gin), Apache Kafka, Redis, MySQL, Docker, Nginx</p>
                     <ul className="list-disc list-inside text-xs sm:text-sm mt-2 space-y-1">
-                      <li>Designed to handle 100,000+ requests per second with strong consistency guarantees.</li>
-                      <li>Atomic Redis Lua scripts to eliminate overselling and race conditions under heavy load.</li>
-                      <li>Event-driven booking pipeline using Apache Kafka with MySQL inventory persistence.</li>
+                      <li>Engineered a distributed ticket booking backend designed to handle 100,000+ requests per second with strict ACID and linearizable consistency guarantees.</li>
+                      <li>Implemented atomic Redis Lua script availability gates to prevent seat overselling and completely eliminate race conditions under intense concurrency.</li>
+                      <li>Designed an asynchronous event-driven booking pipeline using Apache Kafka (12 partitions, 32 worker consumers) with resilient MySQL inventory persistence.</li>
+                      <li>Configured Nginx least-connections load balancing, idempotency keys with 24-hour TTL, and dead-letter queues (DLQ) for fault tolerance.</li>
                     </ul>
                   </div>
                 </div>
@@ -265,29 +270,52 @@ export default function ResumeViewer() {
 
               {/* Education */}
               <div className="mt-6 pt-4 border-t-2 border-(--border-color)">
-                <h2 className="tagline-font text-lg font-bold uppercase tracking-wider text-(--primary-color) mb-2">
+                <h2 className="tagline-font text-lg font-bold uppercase tracking-wider text-(--primary-color) mb-3">
                   Education
                 </h2>
-                <div className="flex flex-col gap-3 text-sm">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
-                    <div>
-                      <strong>Bannari Amman Institute of Technology, Erode</strong> &mdash; B.E. Computer Science and Engineering
+                <div className="space-y-4">
+                  {/* College */}
+                  <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                      <h3 className="font-bold text-base">
+                        Bannari Amman Institute of Technology
+                      </h3>
+                      <span className="font-mono text-xs sm:text-sm font-bold text-(--text-color)/80 shrink-0 whitespace-nowrap">
+                        2025 &ndash; 2029
+                      </span>
                     </div>
-                    <div className="font-mono text-xs sm:text-sm text-(--text-color)/80 font-bold">
-                      2025 &ndash; 2029
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm">
+                      <p className="text-(--primary-color) font-mono font-bold">
+                        B.E. in Computer Science and Engineering <span className="text-(--text-color)/50 font-normal">&bull;</span> <span className="font-normal text-(--text-color)/80">Erode, Tamil Nadu</span>
+                      </p>
+                      <span className="font-mono font-bold text-(--primary-color) shrink-0 whitespace-nowrap">
+                        CGPA: 9.28 / 10
+                      </span>
                     </div>
-                  </div>
-                  <div className="text-xs sm:text-sm text-(--primary-color) font-bold font-mono">
-                    CGPA: 9.28 / 10
                   </div>
 
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pt-2 border-t border-(--border-color)/30">
-                    <div>
-                      <strong>Holy Children Matriculation Higher Secondary School, Salem</strong>
-                      <span className="text-xs text-(--text-color)/70 block sm:inline sm:ml-2">Salem, Tamil Nadu</span>
+                  {/* School */}
+                  <div className="p-4 border-2 border-(--border-color) rounded-md logo-shadow">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                      <h3 className="font-bold text-base">
+                        Holy Children Matriculation Higher Secondary School
+                      </h3>
+                      <span className="font-mono text-xs sm:text-sm text-(--text-color)/70 shrink-0 whitespace-nowrap">
+                        Salem, Tamil Nadu
+                      </span>
                     </div>
-                    <div className="font-mono text-xs text-(--text-color)/80">
-                      Higher Secondary (12th): <strong>569 / 600</strong> &bull; SSLC (10th): <strong>451 / 500</strong>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm pt-1">
+                      <span className="text-(--text-color)/80">
+                        Higher Secondary (12th) &amp; SSLC (10th)
+                      </span>
+                      <div className="flex flex-wrap items-center gap-2 font-mono text-xs sm:text-sm shrink-0">
+                        <span className="border border-(--border-color) px-2 py-0.5 rounded font-bold text-(--primary-color)">
+                          12th: 569 / 600
+                        </span>
+                        <span className="border border-(--border-color) px-2 py-0.5 rounded font-bold text-(--primary-color)">
+                          10th: 451 / 500
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "MySQL",
     "Next.js",
     "React",
-    "iTrigger",
+    "Interview Portal",
     "Ticket Booking System",
     "ZeroProxyAttendance",
     "BitCentral",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Jaison David Portfolio",
     title: "Jaison David | Backend & Distributed Systems Engineer",
     description:
-      "Explore the software engineering portfolio, distributed systems projects (Ticket Booking System, iTrigger, BitCentral, ZeroProxyAttendance), and technical skills of Jaison David.",
+      "Explore the software engineering portfolio, distributed systems projects (Interview Portal, Ticket Booking System, BitCentral, ZeroProxyAttendance), and technical skills of Jaison David.",
     images: [
       {
         url: "/images/jaisondavidm.png",
@@ -133,12 +133,12 @@ const jsonLd = {
         "Distributed Systems",
         "Microservices Architecture",
         "Docker & Docker Compose",
-        "MySQL",
+        "MySQL HA Clustering",
         "Next.js",
         "React",
-        "Caddy Server",
+        "WebRTC",
         "Nginx",
-        "Continuous Deployment",
+        "Blue-Green Deployment",
         "REST APIs",
       ],
     },

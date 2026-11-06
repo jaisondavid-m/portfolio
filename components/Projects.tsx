@@ -2,25 +2,33 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const projects = [
+interface Project {
+  name: string;
+  description: string;
+  icons: string[];
+  github: string;
+  liveDemo?: string;
+}
+
+const projects: Project[] = [
   {
-    name: "iTrigger — Continuous Deployment & Webhook Automation Server",
+    name: "Interview Portal — Distributed Technical Interview & Lab Engineering Platform",
     description:
-      "A lightweight continuous deployment platform built in Go (Gin) that automates deployments by mapping GitHub repositories and branches to server-side deployment workflows. Features HMAC-SHA256 webhook signature verification to authenticate GitHub events and prevent unauthorized triggers, containerized microservices using Docker and Docker Compose with Caddy as an HTTPS reverse proxy, and a role-based deployment dashboard with manual triggers, real-time execution logs, and deployment analytics.",
+      "An enterprise-grade, high-availability platform for double-blind peer technical interviews and academic lab evaluation. Built with Go 1.23, React 19, MySQL 8.0 Primary-Replica Clustering, Redis, Docker, and Nginx, it combines anonymous WebRTC audio signaling, collaborative drag-and-drop system design, isolated candidate SQL sandboxes, multi-language coding labs, randomized lab examination allocation, automated grading rubrics, and containerized zero-downtime blue-green deployments with automated GTID failover.",
     icons: [
       "@icons/react.svg",
       "@icons/golang.svg",
       "@icons/docker.svg",
-      "@icons/caddy.svg",
-      "@icons/github.svg",
       "@icons/mysql.svg",
+      "@icons/redis.svg",
+      "@icons/nginx.svg",
     ],
-    github: "https://github.com/jaisondavid-m/iTrigger",
+    github: "https://github.com/jaisondavid-m/Interview-Portal",
   },
   {
     name: "BitCentral — Full-Stack Institutional Data Platform",
     description:
-      "A full-stack institutional data platform currently serving 5,700+ students across 20+ academic departments through secure REST APIs. Engineered with a thread-safe in-memory caching layer using sync.RWMutex and deep-copy buffers, reducing Google Sheets API calls and improving response latency. Implements RBAC authorization middleware, SQL-backed role validation, domain-based access control, and optimized MySQL performance using transactions, indexing strategies, and connection pooling.",
+      "A full-stack institutional data platform currently serving 5,700+ students and faculty across 20+ academic departments through secure REST APIs. Engineered with a thread-safe in-memory caching layer using sync.RWMutex and deep-copy buffers, reducing Google Sheets API calls and improving response latency. Implements fine-grained RBAC authorization middleware, SQL-backed role validation, domain-based access control, and optimized MySQL performance using transactions, indexing strategies, and connection pooling.",
     icons: [
       "@icons/react.svg",
       "@icons/golang.svg",
@@ -80,10 +88,12 @@ export default function Projects() {
                 <h3 className="tagline-font font-light text-xl sm:text-2xl mb-2 sm:mb-3">
                   {project.name}
                 </h3>
-                <p className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 md:mb-8 leading-relaxed">
+                <p className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 leading-relaxed">
                   <span className="font-bold underline">OVERVIEW:</span>{" "}
                   {project.description}
                 </p>
+
+                
 
                 {/* Icons row */}
                 <h3 className="font-bold mb-2 sm:mb-3 underline text-sm sm:text-base">
