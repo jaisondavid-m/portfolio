@@ -20,6 +20,7 @@
 
 - [Portfolio](https://jaisondavid.in/)
 - [Resume](https://jaisondavid.in/resume)
+- [About Jaison David](https://jaisondavid.in/about/jaison-david)
 - [GitHub](https://github.com/jaisondavid-m)
 - [LinkedIn](https://www.linkedin.com/in/jaison-david-m-a14072360)
 - Contact: connect@jaisondavid.in
