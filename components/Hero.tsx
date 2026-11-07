@@ -51,7 +51,7 @@ export default function Hero() {
               <Image
                 className="w-full h-full object-cover"
                 src={"/images/jaisondavidm.png"}
-                alt={"Profile Image"}
+                alt="Portrait of Jaison David"
                 width={400}
                 height={400}
                 priority

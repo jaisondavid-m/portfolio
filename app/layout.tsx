@@ -37,6 +37,11 @@ export const metadata: Metadata = {
   ],
   creator: "Jaison David",
   publisher: "Jaison David",
+  category: "technology",
+  formatDetection: {
+    telephone: false,
+  },
+  manifest: "/site.webmanifest",
   alternates: {
     canonical: "https://jaisondavid.in",
   },
@@ -116,6 +121,13 @@ const jsonLd = {
         "Backend & Distributed Systems Engineer specializing in Go (Gin), Apache Kafka, Redis, Docker, and high-throughput web applications.",
       "email": "mailto:connect@jaisondavid.in",
       "telephone": "+919843777817",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "professional inquiries",
+        "email": "connect@jaisondavid.in",
+        "telephone": "+919843777817",
+        "url": "https://jaisondavid.in/#connect",
+      },
       "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "Bannari Amman Institute of Technology",
@@ -123,7 +135,6 @@ const jsonLd = {
       "sameAs": [
         "https://github.com/jaisondavid-m",
         "https://www.linkedin.com/in/jaison-david-m-a14072360",
-        "https://wa.me/919843777817",
       ],
       "knowsAbout": [
         "Go (Golang)",
@@ -150,18 +161,6 @@ const jsonLd = {
       "description":
         "Official portfolio of Jaison David - Backend & Distributed Systems Engineer.",
       "publisher": {
-        "@id": "https://jaisondavid.in/#person",
-      },
-    },
-    {
-      "@type": "ProfilePage",
-      "@id": "https://jaisondavid.in/#webpage",
-      "url": "https://jaisondavid.in",
-      "name": "Jaison David | Backend & Distributed Systems Engineer",
-      "about": {
-        "@id": "https://jaisondavid.in/#person",
-      },
-      "mainEntity": {
         "@id": "https://jaisondavid.in/#person",
       },
     },

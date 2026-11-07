@@ -1,0 +1,17 @@
+{
+  "name": "Jaison David Portfolio",
+  "short_name": "Jaison David",
+  "description": "Official portfolio of Jaison David, Backend & Distributed Systems Engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#97266d",
+  "icons": [
+    {
+      "src": "/icons/jaisondavid.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

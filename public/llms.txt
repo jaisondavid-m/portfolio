@@ -1,0 +1,27 @@
+# Jaison David
+
+> Official portfolio of Jaison David, a Backend & Distributed Systems Engineer and Full-Stack Developer.
+
+## Identity
+
+- Name: Jaison David
+- Alternate name: Jaison David M
+- Focus: Go (Gin), distributed systems, event-driven architectures, REST APIs, Redis, Apache Kafka, MySQL, Docker, React, and Next.js
+- Education: B.E. in Computer Science & Engineering at Bannari Amman Institute of Technology (2025–2029)
+
+## Projects
+
+- [Interview Portal](https://github.com/jaisondavid-m/Interview-Portal): Distributed technical interview and lab engineering platform using Go, React, MySQL, Redis, Docker, Nginx, and WebRTC.
+- [BitCentral](https://github.com/jaisondavid-m/bitcentral-v2): Full-stack institutional data platform. [Live demo](https://bitcentral.bitsathy.in)
+- [ZeroProxyAttendance](https://github.com/jaisondavid-m/ZeroProxyAttendance): QR attendance and anti-proxy system using cryptographic handshakes, GPS geofencing, and campus network validation.
+- [Ticket Booking System](https://github.com/jaisondavid-m/Ticket-Booking-System): Distributed ticket booking backend using Redis, Kafka, MySQL, and Go.
+
+## Official pages
+
+- [Portfolio](https://jaisondavid.in/)
+- [Resume](https://jaisondavid.in/resume)
+- [GitHub](https://github.com/jaisondavid-m)
+- [LinkedIn](https://www.linkedin.com/in/jaison-david-m-a14072360)
+- Contact: connect@jaisondavid.in
+
+This file is supplementary reference material. The portfolio and linked project repositories are the authoritative sources.

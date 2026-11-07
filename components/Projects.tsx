@@ -104,7 +104,7 @@ export default function Projects() {
                     <Image
                       key={i}
                       src={icon.replace("@icons", "/icons")}
-                      alt="tech icon"
+                      alt={`${icon.split("/").pop()?.replace(".svg", "") ?? "technology"} used in ${project.name}`}
                       width={40}
                       height={40}
                       className="object-contain w-8 h-8 sm:w-10 sm:h-10"

@@ -207,7 +207,7 @@ export default function Tools() {
             >
               <Image
                 src={tool.icon.replace("@icons", "/icons")}
-                alt={tool.name}
+                alt={`${tool.name} technology logo`}
                 width={80}
                 height={80}
                 className="object-contain max-h-[70%] max-w-[70%]"

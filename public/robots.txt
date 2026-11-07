@@ -1,13 +1,12 @@
-User-agent: *
-Allow: /
-
+# Search and retrieval crawlers are allowed to discover the public portfolio.
+# Training-focused crawlers are not granted access by this policy.
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: GPTBot
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
@@ -16,13 +15,22 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: Applebot
 Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
 
 User-agent: CCBot
-Allow: /
+Disallow: /
 
-User-agent: cohere-ai
+User-agent: *
 Allow: /
 
 Sitemap: https://jaisondavid.in/sitemap.xml
